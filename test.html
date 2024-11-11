@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulier</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>formulier</h2>
+        <form action="/submit-form" method="POST">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="gender">Geslacht:</label>
+            <select id="gender" name="gender">
+                <option value="male">Man</option>
+                <option value="female">Vrouw</option>
+                <option value="other">Anders</option>
+            </select>
+
+            <button type="submit">Verzenden</button>
+        </form>
+    </div>
+
+</body>
+</html>
